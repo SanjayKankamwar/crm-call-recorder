@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "430170253011",
+    "project_id": "raam-group",
+    "storage_bucket": "raam-group.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430170253011:android:27f51256e066a614b61626",
+        "android_client_info": {
+          "package_name": "com.raamgroup.salesrecorder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbvGOZooBM62EiLb-FfyMf6bsdKJrqsQQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

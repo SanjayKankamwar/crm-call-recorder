@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="incoming_call_color">#008000</color> <color name="outgoing_call_color">#0000FF</color> <color name="missed_call_color">#FF0000</color>   ```
+    <color name="complete_status_color">#4CAF50</color> <color name="uploading_status_color">#FF9800</color> <color name="failed_status_color">#F44336</color>   <color name="pending_status_color">#9E9E9E</color>  ```
+</resources>
