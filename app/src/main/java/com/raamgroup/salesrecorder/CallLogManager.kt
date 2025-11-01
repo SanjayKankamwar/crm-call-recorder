@@ -5,6 +5,7 @@ import android.util.Log
 import androidx.room.Room
 import io.github.jan.supabase.createSupabaseClient
 import io.github.jan.supabase.postgrest.Postgrest
+import io.github.jan.supabase.realtime.Realtime
 import io.github.jan.supabase.storage.Storage
 import io.github.jan.supabase.storage.storage
 import kotlinx.coroutines.Dispatchers
@@ -32,6 +33,7 @@ class CallLogManager(private val context: Context) {
     ) {
         install(Postgrest)
         install(Storage)
+        install(Realtime)
     }
 
     // 1. Save dummy/recorded call log locally

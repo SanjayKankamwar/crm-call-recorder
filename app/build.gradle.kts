@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.google.gms.google.services)
     alias(libs.plugins.kotlin.kapt)
     alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.compose.compiler)
 }
 
 android {
@@ -38,6 +39,13 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
+    buildFeatures {
+        compose = true
+    }
+}
+
+kapt {
+    correctErrorTypes = true
 }
 
 dependencies {
@@ -60,6 +68,25 @@ dependencies {
     // Supabase
     implementation(libs.supabase.postgrest)
     implementation(libs.supabase.storage)
+    implementation(libs.supabase.realtime)
     implementation(libs.ktor.client.cio)
     implementation(libs.kotlin.serialization)
+
+    // Media3
+    implementation(libs.androidx.media3.exoplayer)
+    implementation(libs.androidx.media3.ui)
+
+    // Compose
+    val composeBom = platform(libs.compose.bom)
+    implementation(composeBom)
+    androidTestImplementation(composeBom)
+    implementation(libs.androidx.ui)
+    implementation(libs.androidx.ui.graphics)
+    implementation(libs.androidx.ui.tooling.preview)
+    implementation(libs.androidx.material3)
+    implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.lifecycle.runtime.compose)
+    debugImplementation(libs.androidx.ui.tooling)
+    debugImplementation(libs.androidx.ui.test.manifest)
+    implementation(libs.androidx.material.icons.extended)
 }
